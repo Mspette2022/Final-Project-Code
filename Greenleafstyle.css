@@ -1,0 +1,172 @@
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2f2f2;
+  margin: 0;
+  padding: 20px;
+}
+
+.feature-box {
+  background-color: #1C8E78;
+  padding: 20px;
+  margin-bottom: 20px;
+  border-radius: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h1 {
+  color: #ffffff;
+  margin-bottom: 30px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+h2 {
+  color: #ffffff;
+  margin-top: 0;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+button {
+  background-color: #019894;
+  color: #ffffff;
+  border:#f1f1f1;
+  padding: 10px 20px;
+  margin-top: 10px;
+  border-radius: 5px;
+}
+
+.header {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: 20px;
+    background-color: #019894;
+  }
+  
+  .header img {
+    width: 300px;
+    margin-right: 10px;
+   
+  }
+
+  
+.thermostat-display {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.temperature-controls {
+  display: flex;
+}
+
+.temperature-controls button {
+  margin: 5px;
+}
+
+#energy-warning {
+  color: red;
+  font-weight: bold;
+  margin-top: 5px;
+}
+
+.lights-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brightness-slider {
+  width: 80%;
+  margin-bottom: 10px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.brightness-indicator {
+  width: 200px;
+  height: 50px;
+  background-color: #f1f1f1;
+  margin-bottom: 10px;
+  transition: background-color 0.3s ease;
+}
+.light-control {
+  width: 200px;
+  height: 20px;
+  background-color: #f1f1f1;
+  position: relative;
+  margin-bottom: 10px;
+}
+
+.light-control-slider {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 0%;
+  height: 100%;
+  background-color: gray;
+  transition: background-color 0.3s ease;
+}
+
+.security-box {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.security-buttons {
+  display: flex;
+}
+
+.security-buttons button {
+  margin: 5px;
+  padding: 10px 20px;
+  font-weight: bold;
+  border-radius: 5px;
+}
+
+#arm-button.active {
+  background-color: green;
+  color: white;
+}
+
+#disarm-button.active {
+  background-color: red;
+  color: white;
+}
+
+.camera-view {
+  position: relative;
+  width: 50%;
+  height: 50%;
+  margin-bottom: 10px;
+}
+
+#camera-image {
+  display: block;
+  width: 100%;
+  height: auto;
+}
+
+.camera-off-text {
+  display: none;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: white;
+  font-size: 24px;
+}
+
+.camera-container {
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background-color: black;
+}

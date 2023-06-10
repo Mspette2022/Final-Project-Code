@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>GreenLeaf Home Energy & Security </title>
+  <link rel="stylesheet" type="text/css" href="Greenleafstyle.css">
+  <script src="Greenleaf java.js" defer></script>
+</head>
+<body>
+  <div class="header">
+    <img src="greenleaf.png" alt="App Logo" class="logo">
+ 
+  </div>
+
+  <div class="feature-box">
+    <h2>Thermostat</h2>
+    <div class="thermostat-display">
+      <div id="temperature">72°F</div>
+      <div id="energy-warning"></div>
+      <div class="temperature-controls">
+        <button onclick="decreaseTemperature()">-</button>
+        <button onclick="increaseTemperature()">+</button>
+      </div>
+    </div>
+
+  </div>
+  
+  <div class="feature-box lights-box">
+    <h2>Lights</h2>
+    <div class="brightness-slider">
+      <input type="range" min="0" max="100" value="50" class="slider" id="brightness-slider" oninput="updateBrightness()">
+    </div>
+    <div class="brightness-indicator" id="brightness-indicator"></div>
+    
+  </div>
+  
+  <div class="feature-box camera-box">
+    <h2>Camera</h2>
+    <div class="camera-view">
+      <img src="camera.png" alt="Camera View" id="camera-image">
+      <div id="camera-off" class="camera-off-text">Camera is Off</div>
+      <div id="camera-placeholder" class="camera-placeholder"></div>
+    </div>
+    <button onclick="toggleCamera()">Toggle Camera</button>
+  </div>
+  
+  <div class="feature-box security-box">
+    <h2>Security System</h2>
+    <div class="security-buttons">
+      <button id="arm-button" onclick="setSecurityState('armed')">Arm</button>
+      <button id="disarm-button" onclick="setSecurityState('disarmed')">Disarm</button>
+    </div>
+  </div>
+</body>
+</html>
